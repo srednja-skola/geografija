@@ -97,4 +97,10 @@ body {
     h1.page-header {
         font-size: 25px;
     }
+    /*---- responsive izbornik ----*/
+    .nav {
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
 }
