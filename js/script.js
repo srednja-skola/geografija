@@ -1,6 +1,6 @@
 // footer copyleft (nova godina se mjenja automatski)
 var copyleft = document.querySelector(".copyleft");
-copyleft.innerHTML = "Copyleft <span class='cl'>&copy;</span> " + new Date().getFullYear() + ". - <a href='skripte.html' style='color: rgb(51, 51, 51); text-decoration: none'>Danijel Gavranović, prof.</a>";
+copyleft.innerHTML = "Copyleft <span class='cl'><a href='skripte.html' style='color: rgb(51, 51, 51); text-decoration: none'>&copy;</a></span> " + new Date().getFullYear() + ".";
 
 
 // ------- Propeller Ripple Effect component js function ------- //
