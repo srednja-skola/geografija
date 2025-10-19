@@ -5,7 +5,7 @@
   --g-indigo: #1A237E;
   --g-smedja: #795548;
   --g-zelena: #008b00;
-  --tamno-narancasta: #FF3D00;
+  --g-tamno-narancasta: #FF3D00;
   --g-svijetlo-zelena: #8BC34A;
   --g-zarko-zelena: #76FF03;
   --g-amber: #FFC107;
@@ -20,7 +20,9 @@
 html {
   font-family: sans-serif;
 }
-
+p {
+  font-size: 1.8rem
+}
 body {
   margin: 30px;
 }
@@ -67,6 +69,15 @@ hr {
 }
 .d4 {
   background: var(--g-tamno-plava);
+}
+.h3 {
+  background: var(--g-zelena);
+}
+.e2 {
+  background: var(--g-smedja);
+}
+.g2 {
+  background: var(--g-narancasta);
 }
 .geografija {
   background: var(--g-zelena);
@@ -146,8 +157,8 @@ pre {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background: #fff;
 }
 
@@ -168,9 +179,12 @@ pre {
   text-align: left;
   font-size: 15px;
   margin-top: -85px;
-  left: 0px;
+  left: 0;
 }
 .cl {
     display: inline-block;
     transform: rotate(180deg);
+}
+.crveni-tekst {
+  color: red
 }
