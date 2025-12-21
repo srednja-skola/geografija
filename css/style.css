@@ -44,7 +44,9 @@ body {
   color: white;
   background: #c30000;
 }
-
+.crveni_tekst {
+  color:red;
+}
 .napomena {
   font-size: 80%;
   font-weight: bold;
