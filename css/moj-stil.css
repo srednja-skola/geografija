@@ -1,0 +1,290 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    padding-top: 80px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.sredina {
+    text-align: center;
+}
+
+.lijevo {
+    text-align: left;
+}
+
+.desno {
+    float: right;
+}
+
+#neispitani {
+    font-size: 18px;
+    line-height: 1.5
+}
+
+#jos-nisu-pitani,
+#nema-odgovora {
+    margin-top: 50px;
+    border-bottom: 1px dashed #101010;
+}
+
+#ucenik,
+#pitanje {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+    background: rgba(168, 165, 165, 0.08);
+    border-radius: 3px;
+}
+
+.prozovi-ucenika {
+    margin-top: 7px
+}
+
+#ucenik {
+    font-weight: bold;
+    color: #d00d0d
+}
+
+#pitanje {
+    text-align: left
+}
+
+.odg {
+    font-size: 20px;
+    visibility: hidden;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #fdd320;
+}
+
+.vidljiv {
+    visibility: visible
+}
+
+.granica {
+    position: relative;
+    border-right: 1px dashed #101010;
+    height: 550px;
+    margin: 0px 35px 0 0;
+    padding-right: 20px
+}
+
+.odgovor {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px dashed #101010;
+    /*color: #fff;*/
+    display: block;
+    position: relative;
+    padding: 7px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin: 0 2px
+}
+
+.footer {
+    border-top: 1px dashed #101010;
+    margin-top: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.netocno {
+    background: #d00d0d;
+}
+
+.tocno {
+    background: #0a9d0a;
+}
+
+.pokazi-odgovor {
+    margin-bottom: 40px
+}
+
+.naslov {
+    border-bottom: 1px dashed #101010;
+    color: #286090;
+    font-size: 40px;
+    /* text-shadow: 1px 1px 1px #101010;*/
+    margin: 0px 0 30px 0;
+}
+
+.copyleft {
+    display: inline-block;
+    /*transform: rotate(180deg);*/
+}
+.cl {
+  display:inline-block;
+  transform: rotate(180deg);
+}
+.ocjene {
+    font-size: 16px
+}
+
+.card {
+    margin-top: 80px;
+}
+
+.card-block {
+    padding: 10px 0 0 10px;
+}
+
+#max,
+#sat {
+    color: #fff;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#max:hover {
+    color: #ccc;
+}
+
+@media screen and (max-width:767px) {
+    .granica {
+        display: none;
+    }
+    body {
+        padding-top: 150px;
+    }
+}
+
+#pokaziSliku {
+    margin-left: -20px;
+    color: #0a9d0a
+}
+
+.polovicanOdgovor {
+    background: orange;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.pokazi {
+    color: red
+}
+
+.modal-header {
+    height: 5px;
+    border: none;
+}
+
+.modal-header .close {
+    margin-top: -10px;
+    margin-right: -5px;
+    /*color: red;
+    opacity: 1;*/
+}
+
+.nema-slike {
+    opacity: 0.2
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img.travolta {
+    width: 300px;
+    height: auto;
+}
+
+.stoperica {
+    background: #c60909;
+    color: #fff;
+    font-family: fantasy;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+
+/* naslovna linkovi */
+
+.link-main {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    margin: 2px auto;
+    float: left;
+    position: relative;
+    display: inline-block;
+    color: white
+}
+
+@media screen and (max-width:990px) {
+    .granica {
+        display: none;
+        visibility: hidden;
+    }
+    .naslov-2-krug {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px dashed #101010;
+    }
+}
+
+.zuto {
+    font-weight: bold;
+    color: yellowgreen
+}
+
+.prof {
+    cursor: pointer
+}
+
+.svi-odgovori {
+    display: none;
+}
+
+.svi-odgovori-vidljivi {
+    display: block;
+    animation: fadeInOpacity 0.5s 1 ease-in;
+    opacity: 1;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sakrij {
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#lista-pitanja p:nth-child(even) {
+    padding-left: 20px;
+    font-size: 110%;
+    line-height: 1.6;
+}
+
+#lista-pitanja p:nth-child(odd) {
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 120%;
+}
+
+.snoopy {
+    background: url("../img/bg.jpg") bottom right no-repeat;
+    height: 211px;
+    width: 100%;
+    margin: -190px 0 -20px 0;
+}
