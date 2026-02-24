@@ -1,6 +1,6 @@
  // popis učenika
 var sociologijaImena = [
-  "Dugo Selo (Zagrebačka)",
+"Dugo Selo (Zagrebačka)",
 "Ivanić-Grad (Zagrebačka)",
 "Jastrebarsko (Zagrebačka)",
 "Samobor (Zagrebačka)",
