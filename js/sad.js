@@ -1,6 +1,6 @@
  // popis učenika
 var sociologijaImena = [
-  "New York - New York",
+"New York - New York",
 "Los Angeles - California",
 "Chicago - Illinois",
 "Houston - Texas",
