@@ -143,11 +143,12 @@
   }
 
   /* ---------- Točke koje se mogu generirati (sjecišta označena na rubovima) ----------
-     Isključeni su 0° (nema smjera) i 180° (istok i zapad istodobno).
+     Uključeni su 0° GD (početni meridijan) i 0° GŠ (ekvator).
+     Isključen je 180° (istok i zapad istodobno).
      Za JGŠ nema oznake 75°, pa je ne koristimo.                                       */
-  var LONS = [];
+  var LONS = [0];
   for (var l = 15; l <= 165; l += 15) { LONS.push(l); LONS.push(-l); }
-  var LATS = [15, 30, 45, 60, 75, -15, -30, -45, -60];
+  var LATS = [0, 15, 30, 45, 60, 75, -15, -30, -45, -60];
 
   var btn   = document.getElementById("btn");
   var field = document.getElementById("field");
@@ -161,8 +162,8 @@
   function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
   function label(t) {
-    var lat = Math.abs(t.lat) + "° " + (t.lat > 0 ? "SGŠ" : "JGŠ");
-    var lon = Math.abs(t.lon) + "° " + (t.lon > 0 ? "IGD" : "ZGD");
+    var lat = t.lat === 0 ? "0° GŠ" : Math.abs(t.lat) + "° " + (t.lat > 0 ? "SGŠ" : "JGŠ");
+    var lon = t.lon === 0 ? "0° GD" : Math.abs(t.lon) + "° " + (t.lon > 0 ? "IGD" : "ZGD");
     return lat + " i " + lon;
   }
 
